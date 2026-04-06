@@ -1,5 +1,7 @@
 'use client'
 
+import { WalletConnectButton } from './WalletConnectButton'
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-4 bg-bg-primary/80 backdrop-blur-xl border-b border-white/[0.08]">
@@ -12,9 +14,9 @@ export default function Navbar() {
           <li><a href="#demo" className="text-text-secondary hover:text-text-primary transition-colors font-medium">Demo</a></li>
           <li><a href="#pricing" className="text-text-secondary hover:text-text-primary transition-colors font-medium">Get Aspera</a></li>
         </ul>
-        <a href="#pricing" className="px-6 py-2.5 bg-accent text-white font-semibold rounded-lg hover:bg-accent-hover transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/30">
-          Get Started
-        </a>
+        <div className="flex items-center gap-4">
+          <WalletConnectButton />
+        </div>
       </div>
     </nav>
   )

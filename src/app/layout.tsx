@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import '@rainbow-me/rainbowkit/styles.css'
 import { Web3Provider } from '@/lib/Web3Provider'
 
 export const metadata: Metadata = {
