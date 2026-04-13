@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 export default function Demo() {
   return (
@@ -11,9 +11,9 @@ export default function Demo() {
           </p>
         </div>
 
-        <div 
+        <div
           className="aspect-video bg-bg-card border-2 border-dashed border-white/[0.08] rounded-2xl flex flex-col items-center justify-center gap-4 cursor-pointer transition-all hover:border-accent hover:bg-accent/5"
-          onClick={() => alert('Demo video coming soon!')}
+          onClick={() => alert("Demo video coming soon!")}
         >
           <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-3xl transition-transform hover:scale-110">
             ▶
@@ -23,5 +23,5 @@ export default function Demo() {
         </div>
       </div>
     </section>
-  )
+  );
 }

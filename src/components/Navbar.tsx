@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { WalletConnectButton } from './WalletConnectButton'
+import { WalletConnectButton } from "./WalletConnectButton";
 
 export default function Navbar() {
   return (
@@ -10,14 +10,35 @@ export default function Navbar() {
           Aspera
         </div>
         <ul className="hidden md:flex gap-8 list-none">
-          <li><a href="#features" className="text-text-secondary hover:text-text-primary transition-colors font-medium">Features</a></li>
-          <li><a href="#demo" className="text-text-secondary hover:text-text-primary transition-colors font-medium">Demo</a></li>
-          <li><a href="#pricing" className="text-text-secondary hover:text-text-primary transition-colors font-medium">Get Aspera</a></li>
+          <li>
+            <a
+              href="#features"
+              className="text-text-secondary hover:text-text-primary transition-colors font-medium"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="#demo"
+              className="text-text-secondary hover:text-text-primary transition-colors font-medium"
+            >
+              Demo
+            </a>
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              className="text-text-secondary hover:text-text-primary transition-colors font-medium"
+            >
+              Get Aspera
+            </a>
+          </li>
         </ul>
         <div className="flex items-center gap-4">
           <WalletConnectButton />
         </div>
       </div>
     </nav>
-  )
+  );
 }
